@@ -45,104 +45,112 @@ class _homePageState extends State<homePage> {
                         Padding(
                           padding: const EdgeInsets.only(right: 30.0),
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(60),
-                            color: Colors.black,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey
-                                    .withOpacity(1.0), // Shadow color
-                                spreadRadius: 5, // Spread radius
-                                blurRadius: 7, // Blur radius
-                                offset: Offset(0, 3), // Offset
-                              ),
-                            ],
-                          ),
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 40.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(60),
+                              color: Colors.black,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey
+                                      .withOpacity(1.0), // Shadow color
+                                  spreadRadius: 5, // Spread radius
+                                  blurRadius: 7, // Blur radius
+                                  offset: Offset(0, 3), // Offset
+                                ),
+                              ],
+                            ),
 
-                          width: 115, // Set the width of the rectangle
-                          height: 115, // Set the height of the rectangle
-                          // color: Colors.black,
-                          // Set the color of the rectangle
-                          child: Column(
-                            children: [
-                              SizedBox(
-                                height: 30,
-                              ),
-                              Text(
-                                '20.5 км', // Text to display inside the rectangle
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 25,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Text(
-                                'расстояние', // Text to display inside the rectangle
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                            ],
+                            width: 115, // Set the width of the rectangle
+                            height: 115, // Set the height of the rectangle
+                            // color: Colors.black,
+                            // Set the color of the rectangle
+                            child: Column(
+                              children: [
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Text(
+                                  '20.5 км', // Text to display inside the rectangle
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                                Text(
+                                  'расстояние', // Text to display inside the rectangle
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
+
                         SizedBox(
                           width: 16,
+                          height: 100,
                         ),
                         // Transform.translate(
                         //   offset: Offset(0, 100),
                         // ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Colors.green[300],
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey
-                                    .withOpacity(0.7), // Shadow color
-                                spreadRadius: 5, // Spread radius
-                                blurRadius: 7, // Blur radius
-                                offset: Offset(0, 3), // Offset
-                              ),
-                            ],
-                          ),
+                        Padding(
+                          padding: EdgeInsets.only(top: 40.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              color: Colors.green[300],
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey
+                                      .withOpacity(0.7), // Shadow color
+                                  spreadRadius: 5, // Spread radius
+                                  blurRadius: 7, // Blur radius
+                                  offset: Offset(0, 3), // Offset
+                                ),
+                              ],
+                            ),
 
-                          width: 150, // Set the width of the rectangle
-                          height: 150, // Set the height of the rectangle
+                            width: 150, // Set the width of the rectangle
+                            height: 150, // Set the height of the rectangle
 
-                          child: Column(
-                            children: [
-                              SizedBox(
-                                height: 27,
-                              ),
-                              Text(
-                                '5 г', // Text to display inside the rectangle
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                              Text(
-                                'компенсация', // Text to display inside the rectangle
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                              Text(
-                                'выбросов CO2', // Text to display inside the rectangle
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                            ],
+                            child: Column(
+                              children: [
+                                SizedBox(
+                                  height: 27,
+                                ),
+                                Text(
+                                  '5 г', // Text to display inside the rectangle
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 30,
+                                      fontWeight: FontWeight.w700),
+                                ),
+                                Text(
+                                  'компенсация', // Text to display inside the rectangle
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700),
+                                ),
+                                Text(
+                                  'выбросов CO2', // Text to display inside the rectangle
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ],
                     ),
                     SizedBox(
-                      height: 80,
+                      height: 43,
                     ),
                     Text(
                       'Вклад в экологию благодаря вашим поездкам:', // Text to display inside the rectangle
@@ -213,7 +221,7 @@ class _homePageState extends State<homePage> {
                       ],
                     ),
                     SizedBox(
-                      height: 48,
+                      height: 45,
                     ),
                     Text(
                       'История поездок                                         ', // Text to display inside the rectangle
